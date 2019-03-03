@@ -282,6 +282,7 @@ var Typeahead = createReactClass({
   },
 
   _onChange: function(event) {
+    this.setState({isFocused: true, showResults: true})
     if (this.props.onChange) {
       this.props.onChange(event);
     }
